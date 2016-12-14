@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style_basic.css" media="all">
+	<link rel="stylesheet" type="text/css" href="style_min.css" media="screen and (min-width: 721px)">
+	<link rel="stylesheet" type="text/css" href="style_full.css" media="screen and (min-width: 1281px)">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<title>LK Dobšiná</title>
+</head>
+<body>
+	<header class="main_header">
+		Lukostrelecký klub Dobšiná
+	</header>
+
+	<nav>
+		<a href="index.html" class="button"><i class="fa fa-home"></i>Domov</a>
+		<a href="o_nas.html" class="button"><i class="fa fa-question-circle"></i>O Nás</a>
+		<a href="prihlaska.html" class="button"><i class="fa fa-file-text"></i>Prihláška</a>
+		<a href="kontakt.html" class="button"><i class="fa fa-id-card"></i>Kontakt</a>
+	</nav>
+	<aside class="aside_left">
+		<div>
+			<p class="nav_path"><a href="index.html">Domov</a></p>
+			<ul>
+				<li class="active"><a href="index.html">Domov</a></li>
+				<li><a href="o_nas.html">O nás</a></li>
+				<li><a href="prihlaska.html">Prihláška</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+		</div>
+		<div class="partneri">
+			<h4>Partneri:</h4>
+			<a href="http://www.archery3d.sk"><img src="Obrazky/sla3d-logo.svg" alt="sla_logo"></a>
+			<a href="http://www.dobsina.sk"><img src="Obrazky/erb_dobsina1.png" alt="erb_dobsina"></a>
+			<a href="http://www.mldobsina.sk/"><img src="Obrazky/lesy_logo.png" alt="logo_lesy"></a>
+		</div>
+	</aside>
+	<button id="hide_aside"></button>
+	<button id="show_aside"></button>
+	<script>
+		$('#show_aside').click(function() {
+			$('.aside_left').css('left', '0');
+			$('#show_aside').css({ 'left': '35%', 'z-index': '0'});
+			$('#hide_aside').css({ 'left': '35%', 'z-index': '1'});
+		})
+		$('#hide_aside').click(function() {
+			$('.aside_left').css('left', '-35%');
+			$('#show_aside').css({ 'left': '0', 'z-index': '1'});
+			$('#hide_aside').css({ 'left': '0', 'z-index': '0'});
+		})
+	</script>
+	<section>
+		<h1>Novinky</h1>
+		<div>
+			<h2><a href="Clanky/info_o_stranke.html">Info o stránkach</a></h2>
+			<p class="sample">
+				Tu je info o stránkch.<a href="Clanky/info_o_stranke.html"> Čítaj ďalej.</a>
+			</p>
+		</div>
+		<div>
+			<h2><a href="Clanky/lukostrelba_na_slovensku.html">Lukostreľba na Slovensku</a></h2>
+			<img src="Obrazky/Thumbnails/clanok1-mini.png" alt="Thumbnail" id="nahlad">
+			<p class="sample">
+				Luk a s ním aj veľmi často spojovaný šíp, bol nástrojom už v pradávnej dobe kedy sa používal prevažne k lovu.
+				Postupom času sa táto zbraň začala vo veľkom využívať armádami rôzných národov. Každý národ, mal svoj unikátny tvar, dlžku, prispôsobený ich potrebám, či už k lovu,
+				alebo strieľaniu na nepriateľov z koňského chrbta. V dnešnej dobe poznáme veľa druhov lukov a máme možnosť si vybrať práve ten, ktorý sa nám páči, z ktorého sa nám dobre
+				strieľa a z ktorého trafíme vždy svoj cieľ. Aj v dnešnej dobe sa luk používa k lovu, avšak už sa na to vzťahujú obmedzenia a zákazy. My sa poďme ale venovať
+				lukostreľbe ako športu. <a href="Clanky/lukostrelba_na_slovensku.html"> Čítaj ďalej.</a>
+			</p>
+		</div>
+	</section>
+
+	<aside class="aside_right">
+		<img src="Obrazky/logo.jpg" alt="logo">
+		<div>
+			<h3>Najbližšie súťaže</h3>
+			<ul>
+				<li>
+					<p>Sezóna skončila</p>
+					<span class="info">
+						Sezóna skončila<br />
+						Ďalšie súťaže v ďalšej sezóne<br />
+					</span>
+				</li>
+			</ul>
+			<p>Viac info k súťažiam a prihlasovanie na sútaže na <a href="http://archery3d.sk/sutaze">tejto stránke</a>.</p>
+		</div>
+		<div class="socialne_siete">
+			<h3>Nájdete nás na:</h3>
+			<a href="https://www.facebook.com/LukostreleckyKlubDobsina/?fref=ts"><i class="fa fa-facebook fcb"></i></a>
+			<a href="#"><i class="fa fa-instagram insta"></i></a>
+			<a href="#"><i class="fa fa-google gplus"></i></a>
+		</div>
+	</aside>
+
+	<footer class="main_footer">
+		<p>Vytvoril: <strong>Martin Hrebeňár</strong></p>
+		<img src="Obrazky/logo.jpg" alt="logo">
+	</footer>
+
+</body>
+</html>

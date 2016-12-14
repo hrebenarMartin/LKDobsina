@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style_basic.css" media="all">
+	<link rel="stylesheet" type="text/css" href="style_min.css" media="screen and (min-width: 721px)">
+	<link rel="stylesheet" type="text/css" href="style_full.css" media="screen and (min-width: 1281px)">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Prihláška</title>
+</head>
+<body>
+	<header class="main_header">
+		Lukostrelecký klub Dobšiná
+	</header>
+
+	<nav>
+		<a href="index.html" class="button"><i class="fa fa-home"></i>Domov</a>
+		<a href="o_nas.html" class="button"><i class="fa fa-question-circle"></i>O Nás</a>
+		<a href="prihlaska.html" class="button"><i class="fa fa-file-text"></i>Prihláška</a>
+		<a href="kontakt.html" class="button"><i class="fa fa-id-card"></i>Kontakt</a>
+	</nav>
+
+	<aside class="aside_left">
+		<div>
+			<p class="nav_path"><a href="index.html">Domov</a> <em>-></em> <a href="prihlaska.html">Prihláška</a></p>
+			<ul>
+				<li><a href="index.html">Domov</a></li>
+				<li><a href="o_nas.html">O nás</a></li>
+				<li class="active"><a href="prihlaska.html">Prihláška</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+		</div>
+		<div class="partneri">
+			<h4>Partneri:</h4>
+			<a href="http://www.archery3d.sk"><img src="Obrazky/sla3d-logo.svg" alt="sla_logo"></a>
+			<a href="http://www.dobsina.sk"><img src="Obrazky/erb_dobsina1.png" alt="erb_dobsina"></a>
+			<a href="http://www.mldobsina.sk/"><img src="Obrazky/lesy_logo.png" alt="logo_lesy"></a>
+		</div>
+	</aside>
+
+	<section>
+		<h2>Prihláška</h2>
+		<form>
+			<fieldset>
+				<legend>Základné údaje</legend>
+				<label for="meno">Meno:*</label> <input type="text" name="meno" id="meno" size="15" required><br>
+				<label for="priezvisko">Priezvisko:*</label> <input type="text" name="priezvisko" id="priezvisko" size="30" required>
+				<br>Pohlavie:* <label for="muz">Muž</label> <input type="radio" name="p" id="muz" required> | <input type="radio" name="p" id="zena"> <label for="zena">Žena</label>
+				<br> <label for="vek">Vek:*</label> <input type="number" name="vek" id="vek" required>
+			</fieldset>
+			<fieldset>
+				<legend>Kontaktné údaje</legend>
+				<label for="mesto">Mesto:*</label> <input type="text" name="mesto" id="mesto" required><br />
+				<label for="adresa">Adresa:*</label> <input type="text" name="adresa" id="adresa" required><br />
+				<label for="psc">PSČ:*</label> <input type="text" name="psc" id="psc" required><br />
+				<label for="tel_cislo">Telefón(Mobil):</label> <input type="text" name="tel_cislo" id="tel_cislo"><br />
+				<label for="mail">E-mail:*</label> <input type="text" name="mail" id="mail" required><br />
+			</fieldset>
+			<label for="spravy">Chceš dostávať dôležité správy mailom?</label> <input type="checkbox" name="spravy" id="spravy" checked> <br>
+			*: povinná informácia<br />
+			<input type="submit" name="posli" id="posli" value="Pošli prihlášku">
+		</form>
+	</section>
+
+	<aside class="aside_right">
+		<img src="Obrazky/logo.jpg" alt="logo">
+		<div>
+			<h3>Najbližšie súťaže</h3>
+			<ul>
+				<li>
+					<p>Sezóna skončila</p>
+					<span class="info">
+						Sezóna skončila<br />
+						Ďalšie súťaže v ďalšej sezóne<br />
+					</span>
+				</li>
+			</ul>
+			<p>Viac info k súťažiam a prihlasovanie na sútaže na <a href="http://archery3d.sk/sutaze">tejto stránke</a>.</p>
+		</div>
+		<div class="socialne_siete">
+			<h3>Nájdete nás na:</h3>
+			<a href="https://www.facebook.com/LukostreleckyKlubDobsina/?fref=ts"><i class="fa fa-facebook fcb"></i></a>
+			<a href="#"><i class="fa fa-instagram insta"></i></a>
+			<a href="#"><i class="fa fa-google gplus"></i></a>
+		</div>
+	</aside>
+
+	<footer class="main_footer">
+		<p>Vytvoril: <strong>Martin Hrebeňár</strong></p>
+		<img src="Obrazky/logo.jpg" alt="logo">
+	</footer>
+
+</body>
+</html>
